@@ -1,0 +1,241 @@
+/*
+	COLOURS
+
+	#009fc6		blue-ish	arrows
+	#50CFE5		blue		link colour
+	
+*/
+
+
+/* ---- Reset & Common ---- */
+
+*, .x { border: 0; font-size: 100%; font-style: inherit; font-weight: inherit; outline: 0; padding: 0; margin: 0;  }
+
+div.clear{ clear: both; line-height: 0; height: 0px; font-size:0; overflow: hidden; }
+.clear 	{ clear: both; }
+
+
+
+/* --------------------------------- */
+/* SITE-WIDE TAGS                    */
+/* --------------------------------- */
+
+body {	
+	background: #000;
+	color: #FFF;
+	font-family: Calibri, Tahoma, Helvetica, sans-serif;
+	font-size: 0.75em;
+	overflow: hidden;
+	/* overflow-y: scroll; */
+	position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    /*color: #E7138A;*/
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h1 { font-size: 2.40em; }
+h2 { font-size: 2.2em; }
+h3 { font-size: 1.80em; }
+h4 { font-size: 1.40em; }
+h5 { font-size: 1.20em; }
+h6 { font-size: 1.00em; }
+
+a { color: #50CFE5; text-decoration: none; }
+a:hover { color: #FFFFFF; }
+
+p {
+    line-height: 150%;
+    padding: 0 0 1em 0;
+}
+
+b, strong { font-weight: bold; }
+em, i { font-style: italic; }
+
+ul, ol {
+    color: #FFF;
+    line-height: 150%;
+    margin-bottom: 1em;
+    padding-left: 2em;
+}
+
+ul li, ol li { padding-bottom: 0.5em; }
+
+img { border: 0; }
+
+td { vertical-align: top; }
+
+
+
+
+/* ------------------------- */
+/* LAYOUT                    */
+/* ------------------------- */
+
+div.inner {
+	/*margin: 0 auto;
+	max-width: 945px;*/
+}
+
+div#bgrd { background: url(nonexist.gif); }
+
+
+.transBlue {
+	background: url(../images/headerBgrd.png) top left repeat;	
+	margin: 0.4em;
+	padding: 1.1em 1.1em 1.1em 1.6em;
+	width: 238px;
+}
+#header {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	left: 0;
+	position: fixed;
+	top: 0;
+}
+
+	#logo {
+		/*float: left;
+		padding-top: 25px;*/
+	}
+	
+		#logo img {
+		}
+	
+	
+	#contact {
+		/*float: right;*/
+		padding-top: 10px;
+		/*text-align: right;*/
+	}
+	
+		#contact p {
+			font-size: 1.4em;
+			line-height: 120%;
+			padding-bottom: 0;
+		}
+		
+			#contact p a {
+				color: #50CFE5;
+			}
+			
+			#contact p#nav a {
+				border-left:1px solid #CCCCCC;
+				padding:0 6px;
+			}
+			
+				#contact p#nav a#about {
+					border-left:none;
+					padding-left: 0;
+				}		
+			
+
+	div#reveals { }
+
+		.revealed { 
+			border-top: 1px solid #999999;
+			display: block;
+			float: left;
+			margin: 10px 0;
+			padding: 10px 0 0;
+		}
+		
+			a.close {
+				float: right;
+			}
+			
+		div#reveals #contactUs form {
+			
+		}
+		
+			div#reveals #contactUs form div {
+				padding: 6px 0;
+			}
+			
+				div#reveals #contactUs form div label {
+					display:block;
+					float:left;
+					padding:4px 2px;
+					width:120px;
+				}
+			
+				div#reveals #contactUs form div input, div#reveals #contactUs form div textarea {
+					font-family: Calibri, Tahoma, Helvetica, sans-serif;
+					font-size: 12px;
+					padding:4px 2px;
+					width:110px;
+				}
+				
+				div#reveals #contactUs form div textarea {
+					height:100px;
+					padding:4px 2px;
+					width:110px;
+				}
+				
+				div#reveals #contactUs form input.submit {
+					float: right;
+					font-weight: bold;
+					padding: 4px;
+				}
+
+
+#contain {  
+}
+	
+	#message { 
+		background: url(../images/collectionsBgrd.png);
+		margin: 0.4em;
+		padding: 1.1em 1.1em 1.1em 1.1em;
+		position: fixed;
+		left: 30%;
+		top: 20%;
+	}
+	
+	
+	
+	div#about {
+		background: url(../images/aboutBgrd.png);
+		min-height: 150px;
+	}
+
+	div#privacy {
+		bottom: 60px;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		left: 140px; 
+		position: absolute;
+		width: 260px;
+	}
+	
+	#footer {
+		bottom: 1em;
+		left: 2em;
+		position: fixed;
+		right: 2em;
+		text-shadow: #000 2px 1px;
+	}
+	
+		#legal {
+			float: left;
+			padding-top: 7px;
+		}
+		
+		#contactAddr {
+			float: right;
+			font-family: Georgia, "Times New Roman", Times, serif;
+		}
+		
+			#contactAddr h3 {			
+				font-weight: normal;
+			}
+
+			
+			
+/* ------------------------- */
+/* TINYMCE Classes           */
+/* ------------------------- */
+
+.blacktext {
+	color: #000;
+}
+
